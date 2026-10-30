@@ -1,0 +1,44 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+build/
+dist/
+*.egg-info/
+
+# Downloaded models and tool caches
+.cache/
+.huggingface/
+.torch/
+hf_cache/
+
+# Local databases and generated pipeline output
+data/chroma_store/
+data/chroma_retrieval_demo/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/eval/*
+!data/eval/.gitkeep
+*.sqlite3
+*.db
+
+# Logs, temporary files, and OS/editor metadata
+*.log
+*.tmp
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
